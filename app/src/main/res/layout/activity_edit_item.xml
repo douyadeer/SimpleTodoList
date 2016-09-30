@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lutracy.simpletodo.EditItemActivity">
+
+    <TextView
+        android:text="@string/tvEditItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="26dp"
+        android:id="@+id/tvEditItem"
+        tools:text="@string/tvEditItem"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/tvEditItem"
+        android:layout_alignLeft="@+id/tvEditItem"
+        android:layout_alignStart="@+id/tvEditItem"
+        android:layout_marginTop="47dp"
+        android:id="@+id/etEditItem" />
+
+    <Button
+        android:text="@string/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:onClick="onSaveItem"
+        android:id="@+id/btnSaveItem"
+        android:layout_below="@+id/etEditItem"
+        android:layout_alignLeft="@+id/etEditItem"
+        android:layout_alignStart="@+id/etEditItem" />
+</RelativeLayout>
